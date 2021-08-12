@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Foot = styled.footer`
-  background-color: #C0C0C0;
+  background-color: #c0c0c0;
 
   margin: 0 auto;
-  
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,24 +24,23 @@ export const Container = styled.div`
 
 export const DevDetails = styled.div`
   font-size: 1.4rem;
-  color: #FFF;
+  color: #fff;
 
   > a {
-    margin-left: .4rem;
-    color: #FFF;
+    margin-left: 0.4rem;
+    color: #fff;
     text-decoration: none;
-    transition: color .2s;
+    transition: color 0.2s;
 
     &:hover {
-      color: #6C63FF;
+      color: #6c63ff;
     }
   }
-
 `;
 
 export const CompanyDetails = styled.div`
   font-size: 1.4rem;
-  color: #FFF;
+  color: #fff;
 
   display: flex;
   align-items: center;
@@ -64,18 +63,18 @@ export const CompanyDetails = styled.div`
         height: 100%;
         border-radius: 50%;
 
-        background-color: #FFF;
+        background-color: #fff;
         color: #000;
 
         text-decoration: none;
-        transition: background-color .2s, color .2s;
-        
+        transition: background-color 0.2s, color 0.2s;
+
         display: flex;
         align-items: center;
         justify-content: center;
 
         &:hover {
-          background-color: #DDD;
+          background-color: #ddd;
           color: #333;
         }
 

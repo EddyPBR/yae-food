@@ -3,17 +3,22 @@ import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { Foot, Container, DevDetails, CompanyDetails } from "./styles";
 
 export function Footer() {
-  return(
+  return (
     <Foot>
       <Container>
         <DevDetails>
-          Desenvolvido com 💜 por 
-            <a href="https://eddypbr-website.vercel.app/" rel="noopener noreferrer" target="_blank">@eddypbr</a>
+          Desenvolvido com 💜 por
+          <a
+            href="https://eddypbr-website.vercel.app/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            @eddypbr
+          </a>
         </DevDetails>
 
         <CompanyDetails>
           &copy; 2021 yel-food! - Alguns direitos reservados
-
           <ul>
             <li>
               <a href="#" rel="noopener noreferrer" target="_blank">
@@ -34,5 +39,5 @@ export function Footer() {
         </CompanyDetails>
       </Container>
     </Foot>
-  )
+  );
 }

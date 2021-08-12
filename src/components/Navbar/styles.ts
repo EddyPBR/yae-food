@@ -73,6 +73,7 @@ export const Button = styled.a`
   border-radius: 0.8rem;
 
   transition: background-color 0.2s;
+  text-decoration: none;
 
   display: flex;
   align-items: center;

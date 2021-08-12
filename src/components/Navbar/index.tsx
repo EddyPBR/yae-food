@@ -1,14 +1,16 @@
+import { AiOutlineUser } from "react-icons/ai";
+
+import logo from "@assets/logo.png";
 import Image from "next/image";
 import Link from "next/link";
-import { AiOutlineUser } from "react-icons/ai";
+
 import { Nav, Logo, NavList, Button } from "./styles";
-import logo from "@assets/logo.png";
 
 export function Navbar() {
-  return(
+  return (
     <Nav>
       <Logo>
-        <Link href="/">
+        <Link href="/" passHref>
           <a>
             <Image src={logo} alt="yea-food" width={42} height={42} />
             <strong>Yea-food!</strong>
@@ -19,23 +21,23 @@ export function Navbar() {
       <NavList>
         <ul>
           <li>
-            <Link href="/">
+            <Link href="/" passHref>
               <a>Início</a>
             </Link>
           </li>
           <li>
-            <Link href="/locais">
+            <Link href="/locais" passHref>
               <a>Locais de entrega</a>
             </Link>
           </li>
           <li>
-            <Link href="/contato">
+            <Link href="/contato" passHref>
               <a>Contato</a>
             </Link>
           </li>
         </ul>
 
-        <Link href="/login">
+        <Link href="/login" passHref>
           <Button>
             <AiOutlineUser size={24} />
             Fazer pedido
@@ -43,5 +45,5 @@ export function Navbar() {
         </Link>
       </NavList>
     </Nav>
-  )
-};
+  );
+}
